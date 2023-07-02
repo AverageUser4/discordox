@@ -1,0 +1,19 @@
+{
+  "name": "discordox",
+  "version": "1.0.0",
+  "description": "Discord. Redefined.",
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-app": "npm install && concurrently \"npm run install-client\" \"npm run install-server\"",
+    "start-client": "cd client && npm start",
+    "start-server": "cd server && npm start",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

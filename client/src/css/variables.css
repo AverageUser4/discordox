@@ -1,0 +1,31 @@
+:root {
+  --bg-1: #313338;
+  --bg-2: #1E1F22;
+  --bg-3: #2B2D31;
+
+  --fs-down-2: 12px;
+  --fs-down-1: 14px;
+  --fs-0: 16px;
+  --fs-up-1: 24px;
+
+  --btn-color-1: #ffffff;
+  --btn-bg-1: #5865F2;
+  --btn-bg-1-hover: #4752C4;
+
+  --text-1: #f2f3f5; /* primary */
+  --text-2: #b5bac1; /* tertiary */
+  --text-3: #949ba4; /* muted */
+  --text-4: #dbdee1; /* secondary */
+  --text-5: #f23f42; /* danger */
+
+  --link-1: #00a8fc; /* primary */
+
+  --interactive-1: #b5bac1;
+  --interactive-1-hover: #dbdee1;
+
+  --select-bg-1: #2B2D31;
+  --select-bg-1-hover: #35373C;
+  --select-bg-1-chosen: #404249;
+
+  --disabled-opacity: 0.5;
+}
