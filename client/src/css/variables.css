@@ -1,31 +1,49 @@
 :root {
-  --bg-1: #313338;
-  --bg-2: #1E1F22;
-  --bg-3: #2B2D31;
+  --font-family-1: 'gg sans', sans-serif;
+  --font-family-2: 'Ginto Nord', sans-serif;
 
-  --fs-down-2: 12px;
-  --fs-down-1: 14px;
-  --fs-0: 16px;
-  --fs-up-1: 24px;
+  --placeholder-color-1: #ff00ff;
+  --placeholder-color-2: #00ff00;
 
-  --btn-color-1: #ffffff;
-  --btn-bg-1: #5865F2;
-  --btn-bg-1-hover: #4752C4;
+  --color-1: #313338;
+  --color-2: #1E1F22;
+  --color-3: #2B2D31;
+  --color-4: #f2f3f5;
+  --color-5: #b5bac1;
+  --color-6: #949ba4;
+  --color-7: #dbdee1;
+  --color-8: #f23f42;
+  --color-9: #00a8fc;
+  --color-10: #35373C;
+  --color-11: #404249;
+  --color-12: #ffffff;
+  --color-13: #5865F2;
+  --color-14: #4752C4;
+  --color-15: #404EED;
+  --color-16: #24282c;
+  --color-17: #23272a;
+  
+  --bg-1: var(--color-1);
+  --bg-2: var(--color-2);
+  --bg-3: var(--color-3);
+  --bg-4: var(--color-15);
 
-  --text-1: #f2f3f5; /* primary */
-  --text-2: #b5bac1; /* tertiary */
-  --text-3: #949ba4; /* muted */
-  --text-4: #dbdee1; /* secondary */
-  --text-5: #f23f42; /* danger */
+  /* --text-1: var(--color-4);
+  --text-2: var(--color-12);
+  --text-3: var(--color-7);
+  --text-4: var(--color-5);
+  --text-5: var(--color-6);
+  --text-6: var(--color-8); */
 
-  --link-1: #00a8fc; /* primary */
-
-  --interactive-1: #b5bac1;
-  --interactive-1-hover: #dbdee1;
-
-  --select-bg-1: #2B2D31;
-  --select-bg-1-hover: #35373C;
-  --select-bg-1-chosen: #404249;
-
-  --disabled-opacity: 0.5;
+  --font-size-down-4: 8px;
+  --font-size-down-3: 10px;
+  --font-size-down-2: 12px;
+  --font-size-down-1: 14px;
+  --font-size-0: 16px;
+  --font-size-up-1: 18px;
+  --font-size-up-2: 20px;
+  --font-size-up-3: 22px;
+  --font-size-up-4: 24px;
+  --font-size-up-5: 32px;
+  --font-size-up-6: 36px;
 }

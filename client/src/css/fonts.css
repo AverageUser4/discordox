@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-ExtraBoldItalic.ttf) format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-Normal.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-NormalItalic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'gg sans';
+  src: url(../assets/fonts/ggsans-SemiBoldItalic.ttf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+} 
+
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url(../assets/fonts/GintoNordBold.woff2) format('woff2');
+  font-weight: 700;
+}
