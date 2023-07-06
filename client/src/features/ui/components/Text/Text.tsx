@@ -1,5 +1,5 @@
 import { createElement } from "react";
-import { TextLook } from "src/data/types";
+import { Look } from "src/data/types";
 import { mapFontSize } from "src/utils";
 
 interface Props {
@@ -7,9 +7,10 @@ interface Props {
   className?: string,
   style?: React.CSSProperties,
   element?: string,
-  look?: TextLook,
+  look?: Look,
   colorScheme?: number,
-  fontSize?: number,
+  fontSize?: number | null,
+  fontFamily?: number,
 };
 
 function Text({
@@ -19,7 +20,8 @@ function Text({
   element = 'span',
   look = 'text',
   colorScheme = 0,
-  fontSize = 0,
+  fontSize = null,
+  fontFamily = 0,
 } : Props) {
   const classes = `
     ${className}
@@ -28,8 +30,11 @@ function Text({
   `;
   const styles = { ...style };
 
-  if(fontSize && !styles.fontSize) {
+  if(!styles.fontSize) {
     styles.fontSize = mapFontSize(fontSize);
+  }
+  if(!styles.fontFamily) {
+    styles.fontFamily = `var(--font-family-${fontFamily})`;
   }
   
   return (

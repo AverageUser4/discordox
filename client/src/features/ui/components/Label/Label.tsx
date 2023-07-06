@@ -1,5 +1,4 @@
-import { Look, ButtonTypeAttribute } from "src/data/types";
-import { mapFontSize } from "src/utils";
+import { Look } from "src/data/types";
 
 interface Props { 
   children: React.ReactNode,
@@ -8,21 +7,15 @@ interface Props {
   kind?: number,
   colorScheme?: number,
   style?: React.CSSProperties,
-  onClick?: Function,
-  type?: ButtonTypeAttribute,
-  fontSize?: number | null,
 };
 
-function Button({ 
+function Label({ 
   children,
   className = '',
-  look = 'button',
+  look = 'label',
   kind = 0,
   colorScheme = 0,
   style = {},
-  onClick = () => 0,
-  type,
-  fontSize = null,
 } : Props) {
   const classes = `
     ${className}
@@ -32,20 +25,14 @@ function Button({
   `;
   const styles = { ...style };
 
-  if(fontSize !== null && !styles.fontSize) {
-    styles.fontSize = mapFontSize(fontSize);
-  }
-  
   return (
-    <button 
+    <label 
       className={classes}
       style={styles}
-      onClick={(event) => onClick(event)}
-      type={type}
     >
       {children}
-    </button>
+    </label>
   );
 }
 
-export { Button };
+export { Label };

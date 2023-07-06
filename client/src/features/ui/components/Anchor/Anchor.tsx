@@ -1,28 +1,29 @@
-import { Look, ButtonTypeAttribute } from "src/data/types";
+import { Link } from "react-router-dom";
+import { Look } from "src/data/types";
 import { mapFontSize } from "src/utils";
 
 interface Props { 
   children: React.ReactNode,
+  href: string,
   className?: string,
   look?: Look,
   kind?: number,
   colorScheme?: number,
   style?: React.CSSProperties,
-  onClick?: Function,
-  type?: ButtonTypeAttribute,
   fontSize?: number | null,
+  isPlainAnchorTag?: boolean,
 };
 
-function Button({ 
+function Anchor({ 
   children,
+  href,
   className = '',
-  look = 'button',
+  look = 'link',
   kind = 0,
   colorScheme = 0,
   style = {},
-  onClick = () => 0,
-  type,
   fontSize = null,
+  isPlainAnchorTag,
 } : Props) {
   const classes = `
     ${className}
@@ -35,17 +36,28 @@ function Button({
   if(fontSize !== null && !styles.fontSize) {
     styles.fontSize = mapFontSize(fontSize);
   }
+
+  const usedProps = { className: classes, style: styles };
   
+  if(isPlainAnchorTag) {
+    return (
+      <a 
+        {...usedProps}
+        href={href}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button 
-      className={classes}
-      style={styles}
-      onClick={(event) => onClick(event)}
-      type={type}
+    <Link 
+      {...usedProps}
+      to={href}
     >
       {children}
-    </button>
+    </Link>
   );
 }
 
-export { Button };
+export { Anchor };

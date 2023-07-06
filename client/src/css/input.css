@@ -1,0 +1,28 @@
+@layer {
+
+  .input {
+    background-color: var(--placeholder-color-0);
+    color: var(--placeholder-color-1);
+    font-size: 16px;
+
+    box-sizing: border-box;
+  }
+
+  .input--kind-0 {
+    padding: 8px 16px;
+  
+    border: none;
+    border-radius: 3px;
+  }
+
+  .input--color-0 {
+    color: var(--color-0);
+    background-color: var(--color-12);
+  }
+
+  .input--color-1 {
+    color: var(--color-7);
+    background-color: var(--bg-1);
+  }
+  
+}

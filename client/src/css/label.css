@@ -1,0 +1,17 @@
+@layer {
+
+  .label {
+    display: flex;
+    gap: 6px 4px;
+  }
+
+  .label--kind-0 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label--kind-1 {
+    flex-direction: column;    
+  }
+
+}

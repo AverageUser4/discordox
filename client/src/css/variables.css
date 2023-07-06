@@ -1,49 +1,35 @@
 :root {
-  --font-family-1: 'gg sans', sans-serif;
-  --font-family-2: 'Ginto Nord', sans-serif;
+  --font-family-0: 'gg sans', sans-serif;
+  --font-family-1: 'ginto nord', sans-serif;
 
-  --placeholder-color-1: #ff00ff;
-  --placeholder-color-2: #00ff00;
+  --placeholder-color-0: #ff00ff;
+  --placeholder-color-1: #00ff00;
 
+  --color-0: #23272a;
   --color-1: #313338;
-  --color-2: #1E1F22;
-  --color-3: #2B2D31;
+  --color-2: #1e1f22;
+  --color-3: #2b2d31;
   --color-4: #f2f3f5;
   --color-5: #b5bac1;
   --color-6: #949ba4;
   --color-7: #dbdee1;
   --color-8: #f23f42;
   --color-9: #00a8fc;
-  --color-10: #35373C;
+  --color-10: #35373c;
   --color-11: #404249;
   --color-12: #ffffff;
-  --color-13: #5865F2;
-  --color-14: #4752C4;
-  --color-15: #404EED;
+  --color-13: #5865f2;
+  --color-14: #4752c4;
+  --color-15: #404eed;
   --color-16: #24282c;
-  --color-17: #23272a;
-  
-  --bg-1: var(--color-1);
-  --bg-2: var(--color-2);
-  --bg-3: var(--color-3);
-  --bg-4: var(--color-15);
+  --color-17: #7983f5;
+  --color-18: #7289da;
 
-  /* --text-1: var(--color-4);
-  --text-2: var(--color-12);
-  --text-3: var(--color-7);
-  --text-4: var(--color-5);
-  --text-5: var(--color-6);
-  --text-6: var(--color-8); */
+  --bg-0: var(--color-1);
+  --bg-1: var(--color-2);
+  --bg-2: var(--color-3);
+  --bg-3: var(--color-15);
 
-  --font-size-down-4: 8px;
-  --font-size-down-3: 10px;
-  --font-size-down-2: 12px;
-  --font-size-down-1: 14px;
-  --font-size-0: 16px;
-  --font-size-up-1: 18px;
-  --font-size-up-2: 20px;
-  --font-size-up-3: 22px;
-  --font-size-up-4: 24px;
-  --font-size-up-5: 32px;
-  --font-size-up-6: 36px;
+  --font-size-0: clamp(16px, 2vw, 20px);
+  --font-size-up-1: clamp(24px, 5vw, 44px);
 }

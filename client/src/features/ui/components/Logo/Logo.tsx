@@ -1,12 +1,11 @@
-import css from './Logo.module.css';
-import { Link } from 'react-router-dom';
+import { Anchor } from 'src/features/ui';
 import { ReactComponent as LogoSVG } from 'src/assets/icons/logo-with-text.svg';
 
 function Logo() {
   return (
-    <Link className={css['container']} to="/">
+    <Anchor href="/">
       <LogoSVG/>
-    </Link>
+    </Anchor>
   );
 }
 

@@ -1,24 +1,35 @@
 .container {
-  background-color: var(--bg-4);
+  min-height: 100vh;
+}
+
+.container--kind-0 {
+  background-color: var(--bg-3);
   background-image: url(src/assets/images/artwork-chilling-1.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: clamp(400px, 80vw, 650px);
-    /* url(src/assets/images/artwork-clouds.svg) no-repeat bottom; */
-  height: 100vh;
-}
 
+  max-width: 2800px;
+  margin: 0 auto;
+}
 @media(min-width: 740px) {
-  .container {
+  .container--kind-0 {
     background-image: url(src/assets/images/artwork-chilling-2.svg), url(src/assets/images/artwork-clouds.svg);
     background-size: 650px, auto;
     background-position: bottom right, bottom center;
   }
 }
 @media(min-width: 1320px) {
-  .container {
+  .container--kind-0 {
     background-image: url(src/assets/images/artwork-chilling-1.svg), url(src/assets/images/artwork-chilling-2.svg), url(src/assets/images/artwork-clouds.svg);
     background-size: 650px, 650px, auto;
     background-position: bottom left, bottom right, bottom center;
   }
+}
+
+.container--kind-1 {
+  background-image: url(src/assets/images/artwork-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }

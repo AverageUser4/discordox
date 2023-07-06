@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  padding: 8px;
+  max-width: 300px;
+  
+  box-shadow: none;
+  
+  box-sizing: border-box;
+}
+
+.container :nth-child(1) {
+  flex-grow: 1;
+  min-width: 0;
+  outline: none;
+}
+
+.container:has(input:focus-visible) {
+  outline: 2px solid var(--color-16);
+}

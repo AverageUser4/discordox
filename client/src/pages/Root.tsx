@@ -1,16 +1,20 @@
-import css from './temp.module.css';
-import { Button, Text } from 'src/features/ui';
+import { ArtworkContainer, Background, Text, CenteredContainer } from 'src/features/ui';
 import { Header } from 'src/features/webpage';
+import { OpenInBrowser } from 'src/features/auth';
 
 function Root() {
   return (
-    <div className={css['container']}>
-      <Header/>
-      
-      <Text>IMAGINE A PLACE</Text>
-      <Text>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</Text>
-      <Button colorScheme={1} fontSize={2}>Open Discord in your browser</Button>
-    </div>
+    <Background>
+      <ArtworkContainer>
+        <Header/>
+        
+        <CenteredContainer>
+          <Text element="h1" fontFamily={1} fontSize={1} style={{ textAlign: 'center' }}>IMAGINE A PLACE</Text>
+          <Text element="p" fontSize={0} style={{ textAlign: 'center', margin: '12px 0 32px' }}>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</Text>
+          <OpenInBrowser/>
+        </CenteredContainer>
+      </ArtworkContainer>
+    </Background>
   );
 }
 

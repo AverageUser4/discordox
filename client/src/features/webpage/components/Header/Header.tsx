@@ -1,12 +1,12 @@
 import css from './Header.module.css';
-import { Logo, Button } from 'src/features/ui';
+import { Logo, Anchor } from 'src/features/ui';
 
 function Header() {
   return (
     <header className={css['header']}>
       <div className={css['content']}>
         <Logo/>
-        <Button colorScheme={0}>Login</Button>
+        <Anchor href="/login" look="button">Login</Anchor>
       </div>
     </header>
   );

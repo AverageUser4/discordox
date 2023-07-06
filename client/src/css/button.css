@@ -6,10 +6,12 @@
     justify-content: center;
     gap: 0.2em 0.8em;
     
-    background-color: var(--placeholder-color-1);
-    color: var(--placeholder-color-2);
-    font-size: 14px;
+    padding: 0.7em 1.14em;
+
+    background-color: var(--placeholder-color-0);
+    color: var(--placeholder-color-1);
     font-weight: 500;
+    text-decoration: none;
   
     transition-duration: 0.2s;
     transition-property: background-color, color, box-shadow;
@@ -18,10 +20,15 @@
   }
 
   .button--kind-0 {
-    padding: 0.7em 1.14em;
-  
     border: none;
     border-radius: 40px;
+    font-size: 14px;
+  }
+
+  .button--kind-1 {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
   }
 
   .button--color-0 {
@@ -34,12 +41,29 @@
   }
 
   .button--color-1 {
-    background-color: var(--color-17);
+    background-color: var(--color-0);
     color: var(--color-12);
   }
   .button--color-1:hover {
     background-color: var(--color-1);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 15px 0px;
+  }
+
+  .button--color-2 {
+    background-color: var(--color-13);
+    color: var(--color-12);
+  }
+  .button--color-2:hover {
+    background-color: var(--color-17);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 15px 0px;
+  }
+
+  .button--color-3 {
+    background-color: var(--color-13);
+    color: var(--color-12);
+  }
+  .button--color-3:hover {
+    background-color: var(--color-14);
   }
   
 }

@@ -1,0 +1,30 @@
+@layer {
+
+  .link {    
+    color: var(--placeholder-color-1);
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    text-align: left;
+  }
+
+  .link--kind-0 {
+    text-decoration: underline;
+  }
+
+  .link--kind-1 {
+    text-decoration: none;
+  }
+  .link--kind-1:hover {
+    text-decoration: underline;
+  }
+
+  .link--color-0 {
+    color: var(--color-12);
+  }
+
+  .link--color-1 {
+    color: var(--color-9);
+  }
+  
+}

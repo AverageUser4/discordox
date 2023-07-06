@@ -1,7 +1,25 @@
 @layer {
 
   .text {
-    color: hotpink;
+    margin: 0;
+
+    color: var(--placeholder-color-0);
   }
   
+  .text--color-0 {
+    color: var(--color-12);
+  }
+
+  .text--color-1 {
+    color: var(--color-5);
+  }
+
+  .text--color-2 {
+    color: var(--color-8);
+  }
+
+  .text--color-3 {
+    color: var(--color-6);
+  }
+
 }
