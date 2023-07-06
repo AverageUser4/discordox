@@ -22,4 +22,8 @@
     color: var(--color-6);
   }
 
+  .text--color-4 {
+    color: var(--color-7);
+  }
+
 }

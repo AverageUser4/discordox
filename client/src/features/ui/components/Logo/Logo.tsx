@@ -1,9 +1,16 @@
 import { Anchor } from 'src/features/ui';
 import { ReactComponent as LogoSVG } from 'src/assets/icons/logo-with-text.svg';
 
-function Logo() {
+interface Props {
+  className?: string,
+}
+
+function Logo({ className } : Props) {
   return (
-    <Anchor href="/">
+    <Anchor 
+      className={className}
+      href="/"
+    >
       <LogoSVG/>
     </Anchor>
   );

@@ -1,5 +1,5 @@
 import { setIfDefined } from 'src/utils';
-import css from './CenteredContainer.module.css';
+import css from './CenteredBlock.module.css';
 
 interface Props {
   children: React.ReactNode,
@@ -9,7 +9,7 @@ interface Props {
   maxWidth?: number,
 }
 
-function CenteredContainer({ children, style, marginTop, marginBottom, maxWidth } : Props) {
+function CenteredBlock({ children, style, marginTop, marginBottom, maxWidth } : Props) {
   const styles = { ...style };
   setIfDefined(styles, { marginTop, marginBottom, maxWidth });
   
@@ -23,4 +23,4 @@ function CenteredContainer({ children, style, marginTop, marginBottom, maxWidth 
   );
 }
 
-export { CenteredContainer };
+export { CenteredBlock };

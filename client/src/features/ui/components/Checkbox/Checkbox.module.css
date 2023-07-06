@@ -3,14 +3,27 @@
   height: 20px;
 
   border-radius: 3px;
-  background-color: var(--color-12);
   
   appearance: none;
   flex-shrink: 0;
 }
-
 .checkbox:checked {
-  background-image: url(src/assets/icons/checkmark.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox--kind-0 {
+  background-color: var(--color-12);
+}
+.checkbox--kind-0:checked {
+  background-image: url(src/assets/icons/checkmark.svg);
+}
+
+.checkbox--kind-1 {
+  border: 1px solid var(--color-17);
+  border-radius: 5px;
+}
+.checkbox--kind-1:checked {
+  background-color: var(--color-13);
+  background-image: url(src/assets/icons/checkmark-2.svg);
 }

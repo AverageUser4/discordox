@@ -1,6 +1,8 @@
 @layer {
 
   .link {    
+    padding: 0;
+    
     color: var(--placeholder-color-1);
     background-color: transparent;
     border: none;
