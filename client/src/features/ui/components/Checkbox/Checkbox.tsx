@@ -16,6 +16,7 @@ function Checkbox({ isChecked, setIsChecked, kind = 0 } : Props) {
       type="checkbox"
       checked={isChecked}
       onChange={() => setIsChecked((prev: boolean) => !prev)}
+      data-cy="Checkbox"
     />
   );
 }

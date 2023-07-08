@@ -9,7 +9,7 @@ interface Props {
   element?: string,
   look?: Look,
   colorScheme?: number,
-  fontSize?: number | null,
+  fontSize?: number,
   fontFamily?: number,
 };
 
@@ -20,7 +20,7 @@ function Text({
   element = 'span',
   look = 'text',
   colorScheme = 0,
-  fontSize = null,
+  fontSize,
   fontFamily = 0,
 } : Props) {
   const classes = `

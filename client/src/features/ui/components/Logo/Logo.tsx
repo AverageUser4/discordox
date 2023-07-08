@@ -10,6 +10,7 @@ function Logo({ className } : Props) {
     <Anchor 
       className={className}
       href="/"
+      dataCy="Logo"
     >
       <LogoSVG/>
     </Anchor>

@@ -1,8 +1,10 @@
+import { Background } from "src/features/ui";
+
 function Loading() {
   return (
-    <div>
+    <Background>
       Loading...
-    </div>
+    </Background>
   );
 }
 

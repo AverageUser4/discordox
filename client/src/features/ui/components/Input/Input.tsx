@@ -10,8 +10,9 @@ interface Props {
   colorScheme?: number,
   style?: React.CSSProperties,
   type?: React.HTMLInputTypeAttribute,
-  fontSize?: number | null,
+  fontSize?: number,
   placeholder?: string,
+  dataCy?: string,
 };
 
 function Input({ 
@@ -23,8 +24,9 @@ function Input({
   colorScheme = 0,
   style = {},
   type = 'text',
-  fontSize = null,
+  fontSize,
   placeholder = '',
+  dataCy = 'Input',
 } : Props) {
   const classes = `
     ${className}
@@ -34,7 +36,7 @@ function Input({
   `;
   const styles = { ...style };
 
-  if(fontSize !== null && !styles.fontSize) {
+  if(fontSize !== undefined && !styles.fontSize) {
     styles.fontSize = mapFontSize(fontSize);
   }
   
@@ -48,6 +50,7 @@ function Input({
         setValue(event.target.value);
       }}
       placeholder={placeholder}
+      data-cy={dataCy}
     />
   );
 }

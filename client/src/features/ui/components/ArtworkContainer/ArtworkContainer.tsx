@@ -12,6 +12,7 @@ function ArtworkContainer({ children, kind = 0 } : Props) {
         ${css['container']}
         ${css[`container--kind-${kind}`]}
       `}
+      data-cy="ArtworkContainer"
     >
       {children}
     </div>

@@ -2,7 +2,7 @@ import { RegisterForm } from 'src/features/auth';
 import { ArtworkContainer, Background, Text, Anchor, CenteringContainer } from "src/features/ui";
 import { FloatingCard } from 'src/features/ui/components/FloatingCard/FloatingCard';
 
-function Register() {
+function Component() {
   return (
     <Background>
       <ArtworkContainer kind={1}>
@@ -30,4 +30,4 @@ function Register() {
   );
 }
 
-export default Register;
+export { Component };

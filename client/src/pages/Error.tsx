@@ -1,4 +1,4 @@
-export default function ErrorPage() {
+function Component() {
   return (
     <div id="error-page">
       <h1>Oops!</h1>
@@ -6,3 +6,5 @@ export default function ErrorPage() {
     </div>
   );
 }
+
+export { Component };

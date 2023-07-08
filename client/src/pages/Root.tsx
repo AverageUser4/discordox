@@ -2,7 +2,7 @@ import { ArtworkContainer, Background, Text, CenteredBlock } from 'src/features/
 import { Header } from 'src/features/webpage';
 import { OpenInBrowser } from 'src/features/auth';
 
-function Root() {
+function Component() {
   return (
     <Background>
       <ArtworkContainer>
@@ -18,4 +18,4 @@ function Root() {
   );
 }
 
-export default Root;
+export { Component };

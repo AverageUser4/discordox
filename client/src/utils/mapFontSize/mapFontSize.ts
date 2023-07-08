@@ -1,9 +1,9 @@
-export function mapFontSize(fontSize: number | null) {
-  if(fontSize === null) {
+export function mapFontSize(fontSize: number | undefined) {
+  if(typeof fontSize !== 'number') {
     return 'inherit';
   }
 
-  if(!Number.isInteger(fontSize) || fontSize === 0) {
+  if(fontSize === 0) {
     return 'var(--font-size-0)';
   } 
   if(fontSize > 0) {

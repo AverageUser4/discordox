@@ -6,7 +6,10 @@ interface Props {
 
 function CenteringContainer({ children } : Props) {
   return (
-    <div className={css['container']}>
+    <div 
+      className={css['container']}
+      data-cy="CenteringContainer"
+    >
       {children}
     </div>
   );

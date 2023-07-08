@@ -17,6 +17,7 @@ function CenteredBlock({ children, style, marginTop, marginBottom, maxWidth } : 
     <div 
       className={css['container']}
       style={styles}
+      data-cy="CenteredBlock"
     >
       {children}
     </div>

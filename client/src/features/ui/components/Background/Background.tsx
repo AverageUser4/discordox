@@ -10,6 +10,7 @@ function Background({ children, color = 3 } : Props) {
     <div 
       className={css['background']}
       style={{ backgroundColor: `var(--bg-${color})`}}
+      data-cy="Background"
     >
       {children}
     </div>

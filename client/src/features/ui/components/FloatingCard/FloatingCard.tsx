@@ -8,7 +8,10 @@ interface Props {
 
 function FloatingCard({ children, hasLogo = true } : Props) {
   return (
-    <div className={css['container']}>
+    <div 
+      className={css['container']}
+      data-cy="FloatingCard"
+    >
       {hasLogo && <Logo className={css['logo']}/>}
       {children}
     </div>

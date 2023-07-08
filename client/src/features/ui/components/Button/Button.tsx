@@ -10,7 +10,8 @@ interface Props {
   style?: React.CSSProperties,
   onClick?: Function,
   type?: ButtonTypeAttribute,
-  fontSize?: number | null,
+  fontSize?: number,
+  dataCy?: string,
 };
 
 function Button({ 
@@ -22,7 +23,8 @@ function Button({
   style = {},
   onClick = () => 0,
   type,
-  fontSize = null,
+  fontSize,
+  dataCy = 'Button',
 } : Props) {
   const classes = `
     ${className}
@@ -32,7 +34,7 @@ function Button({
   `;
   const styles = { ...style };
 
-  if(fontSize !== null && !styles.fontSize) {
+  if(fontSize !== undefined && !styles.fontSize) {
     styles.fontSize = mapFontSize(fontSize);
   }
   
@@ -42,6 +44,7 @@ function Button({
       style={styles}
       onClick={(event) => onClick(event)}
       type={type}
+      data-cy={dataCy}
     >
       {children}
     </button>

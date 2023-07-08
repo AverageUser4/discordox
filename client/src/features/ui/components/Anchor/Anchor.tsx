@@ -10,8 +10,9 @@ interface Props {
   kind?: number,
   colorScheme?: number,
   style?: React.CSSProperties,
-  fontSize?: number | null,
+  fontSize?: number,
   isPlainAnchorTag?: boolean,
+  dataCy?: string,
 };
 
 function Anchor({ 
@@ -22,8 +23,9 @@ function Anchor({
   kind = 0,
   colorScheme = 0,
   style = {},
-  fontSize = null,
+  fontSize,
   isPlainAnchorTag,
+  dataCy = 'Anchor',
 } : Props) {
   const classes = `
     ${className}
@@ -33,11 +35,11 @@ function Anchor({
   `;
   const styles = { ...style };
 
-  if(fontSize !== null && !styles.fontSize) {
+  if(fontSize !== undefined && !styles.fontSize) {
     styles.fontSize = mapFontSize(fontSize);
   }
 
-  const usedProps = { className: classes, style: styles };
+  const usedProps = { className: classes, style: styles, "data-cy": dataCy };
   
   if(isPlainAnchorTag) {
     return (

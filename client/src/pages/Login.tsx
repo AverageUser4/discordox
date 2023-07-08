@@ -2,7 +2,7 @@ import { LoginForm } from 'src/features/auth';
 import { ArtworkContainer, Background, Text, Anchor, CenteringContainer } from "src/features/ui";
 import { FloatingCard } from 'src/features/ui/components/FloatingCard/FloatingCard';
 
-function Login() {
+function Component() {
   return (
     <Background>
       <ArtworkContainer kind={1}>
@@ -37,4 +37,4 @@ function Login() {
   );
 }
 
-export default Login;
+export { Component };

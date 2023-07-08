@@ -1,37 +1,36 @@
-import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Loading, ErrorBoundary } from 'src/features/ui';
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { Loading } from 'src/features/ui';
+import { Component as Root } from 'src/pages/Root';
 
-const Root = lazy(() => import('src/pages/Root'));
-const Error = lazy(() => import('src/pages/Error'));
-const Login = lazy(() => import('src/pages/Login'));
-const Register = lazy(() => import('src/pages/Register'));
+const router = createBrowserRouter([{
+  path: '/',
+  element: <Outlet/>,
+  children: [
+    {
+      index: true,
+      element: <Root/>,
+    },
+    {
+      path: 'login',
+      lazy: () => import('./pages/Login'),
+    },
+    {
+      path: 'register',
+      lazy: () => import('./pages/Register'),
+    },
+    {
+      path: '*',
+      lazy: () => import('./pages/Error'),
+    },
+  ],
+}]);
 
 function App() {
   return (
-    <Router>
-      <ErrorBoundary>
-        <Suspense fallback={<Loading/>}>
-          <Switch>
-            <Route exact={true} path="/">
-              <Root/>
-            </Route>
-
-            <Route path="/login">
-              <Login/>
-            </Route>
-
-            <Route exact={true} path="/register">
-              <Register/>
-            </Route>
-
-            <Route path="*">
-              <Error/>
-            </Route>
-          </Switch>
-        </Suspense>
-      </ErrorBoundary>
-    </Router>
+    <RouterProvider
+      router={router}
+      fallbackElement={<Loading/>}
+    />
   );
 }
 
