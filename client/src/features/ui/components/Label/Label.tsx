@@ -7,6 +7,7 @@ interface Props {
   kind?: number,
   colorScheme?: number,
   style?: React.CSSProperties,
+  dataCy?: string,
 };
 
 function Label({ 
@@ -16,6 +17,7 @@ function Label({
   kind = 0,
   colorScheme = 0,
   style = {},
+  dataCy = 'Label'
 } : Props) {
   const classes = `
     ${className}
@@ -29,6 +31,7 @@ function Label({
     <label 
       className={classes}
       style={styles}
+      data-cy={dataCy}
     >
       {children}
     </label>

@@ -1,6 +1,6 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Loading } from 'src/features/ui';
-import { Component as Root } from 'src/pages/Root';
+import { Component as Root } from 'src/pages/Root/Root';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -12,15 +12,15 @@ const router = createBrowserRouter([{
     },
     {
       path: 'login',
-      lazy: () => import('./pages/Login'),
+      lazy: () => import('./pages/Login/Login'),
     },
     {
       path: 'register',
-      lazy: () => import('./pages/Register'),
+      lazy: () => import('./pages/Register/Register'),
     },
     {
       path: '*',
-      lazy: () => import('./pages/Error'),
+      lazy: () => import('./pages/Error/Error'),
     },
   ],
 }]);

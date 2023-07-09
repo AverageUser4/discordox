@@ -3,10 +3,13 @@ import { Logo, Anchor } from 'src/features/ui';
 
 function Header() {
   return (
-    <header className={css['header']}>
+    <header 
+      className={css['header']}
+      data-cy="Header"
+    >
       <div className={css['content']}>
         <Logo/>
-        <Anchor href="/login" look="button">Login</Anchor>
+        <Anchor dataCy="HeaderAnchorLogin" href="/login" look="button">Login</Anchor>
       </div>
     </header>
   );

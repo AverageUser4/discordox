@@ -11,6 +11,7 @@ interface Props {
   colorScheme?: number,
   fontSize?: number,
   fontFamily?: number,
+  dataCy?: string,
 };
 
 function Text({
@@ -22,6 +23,7 @@ function Text({
   colorScheme = 0,
   fontSize,
   fontFamily = 0,
+  dataCy = 'Text',
 } : Props) {
   const classes = `
     ${className}
@@ -38,7 +40,7 @@ function Text({
   }
   
   return (
-    createElement(element, { style: styles, className: classes }, children)
+    createElement(element, { style: styles, className: classes, "data-cy": dataCy }, children)
   );
 }
 

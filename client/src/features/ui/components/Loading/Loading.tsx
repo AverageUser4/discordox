@@ -1,10 +1,10 @@
-import { Background } from "src/features/ui";
-
 function Loading() {
   return (
-    <Background>
+    <div
+      data-cy="Loading"
+    >
       Loading...
-    </Background>
+    </div>
   );
 }
 

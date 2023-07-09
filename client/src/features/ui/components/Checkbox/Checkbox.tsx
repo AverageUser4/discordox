@@ -4,9 +4,15 @@ interface Props {
   isChecked: boolean,
   setIsChecked: Function,
   kind?: number,
+  dataCy?: string,
 }
 
-function Checkbox({ isChecked, setIsChecked, kind = 0 } : Props) {
+function Checkbox({ 
+  isChecked,
+  setIsChecked,
+  kind = 0,
+  dataCy = 'Checkbox'
+} : Props) {
   return (
     <input
       className={`
@@ -16,7 +22,7 @@ function Checkbox({ isChecked, setIsChecked, kind = 0 } : Props) {
       type="checkbox"
       checked={isChecked}
       onChange={() => setIsChecked((prev: boolean) => !prev)}
-      data-cy="Checkbox"
+      data-cy={dataCy}
     />
   );
 }

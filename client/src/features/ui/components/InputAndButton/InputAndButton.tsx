@@ -13,6 +13,7 @@ function InputAndButton({ input, button, style = {} } : Props) {
     <div 
       className={`${css['container']} button button--kind-0 button--color-0`}
       style={styles}
+      data-cy="InputAndButton"
     >
       {input}
       {button}

@@ -7,9 +7,10 @@ interface Props {
   marginTop?: number,
   marginBottom?: number,
   maxWidth?: number,
+  dataCy?: string,
 }
 
-function CenteredBlock({ children, style, marginTop, marginBottom, maxWidth } : Props) {
+function CenteredBlock({ children, style, marginTop, marginBottom, maxWidth, dataCy = 'CenteredBlock' } : Props) {
   const styles = { ...style };
   setIfDefined(styles, { marginTop, marginBottom, maxWidth });
   
@@ -17,7 +18,7 @@ function CenteredBlock({ children, style, marginTop, marginBottom, maxWidth } : 
     <div 
       className={css['container']}
       style={styles}
-      data-cy="CenteredBlock"
+      data-cy={dataCy}
     >
       {children}
     </div>

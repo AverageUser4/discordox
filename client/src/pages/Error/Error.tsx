@@ -1,6 +1,8 @@
 function Component() {
   return (
-    <div id="error-page">
+    <div
+      data-cy="Error"
+    >
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
     </div>

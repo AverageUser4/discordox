@@ -21,7 +21,7 @@ function Component() {
               colorScheme={3}
               style={{ fontSize: 14 }}
             >
-              <Anchor colorScheme={1} kind={1} href="/login">Already have an account?</Anchor>
+              <Anchor colorScheme={1} kind={1} href="/login" dataCy="RegisterAnchorAlreadyHaveAccount">Already have an account?</Anchor>
             </Text>
           </FloatingCard>
         </CenteringContainer>
